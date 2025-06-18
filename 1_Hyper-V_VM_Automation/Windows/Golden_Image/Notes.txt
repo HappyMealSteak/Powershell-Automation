@@ -1,0 +1,10 @@
+Root Admin Password is Hardcoded - Ensure you change this as it is public facing
+- This can be edited within the Autounattended.xml
+
+Process 
+1. Edit XML as needed 
+2. Run: 1_Create_ISO_With_XML_Values.ps1
+	- This will pull values from the XML File 
+	- This will use your Sourced Server ISO
+		- If you would like to use a different ISO ensure you update the values within this script
+3. Run: 2_Create_WinSrv2019_VM_From_Golden_Image.ps1
